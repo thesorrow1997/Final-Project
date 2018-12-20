@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sneaker Home</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/sell.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="../index.html">
+                Sneaker Home
+            </a>
+        </h1>
+        <nav>
+            <div class="nav-item">
+                <a href="#">NIKE</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">JORDAN</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">ADIDAS</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">FOOTWEAR</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">JOURNAL</a>
+            </div>
+        </nav>
+        <div class="user-panel">
+            <img src="../images/search-icon-nav.png" alt="search icon">
+            <img src="../images/add-icon-nav.png" alt="add icon" onclick="location.href='pages/dashboard.html';">
+            <img src="../images/cart-icon-nav.png" alt="cart icon">
+        </div>
+    </header>
+    <main>
+        <section class="form">
+            <form action="#" method="GET">
+                <div class="inp-grp search-bar">
+                    <label for="search">What do you want to sell?</label>
+                    <div class="inp-wrap">
+                        <input type="search" name="search" id="search" required>
+                        <input type="submit" value="">
+                    </div>
+                </div>
+                <div class="inp-grp">
+                    <div class="lbl-wrap">
+                        <label for="condition">Condition</label>
+                    </div>
+                    <div class="inp-wrap">
+                        <span><input type="checkbox" name="condition" value="new"> New</span>
+                        <span><input type="checkbox" name="condition" value="pre-order"> Pre-Order</span>
+                    </div>
+                </div>
+                <div class="inp-grp">
+                    <div class="lbl-wrap">
+                        <label for="size">Size</label>
+                    </div>
+                    <div class="inp-wrap">
+                        <select name="size" id="size" required>
+                            <option value="7">7</option>
+                            <option value="7.5">7.5</option>
+                            <option value="8">8</option>
+                            <option value="8.5">8.5</option>
+                            <option value="9">9</option>
+                            <option value="9.5">9.5</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="inp-grp">
+                    <div class="lbl-wrap">
+                        <label for="price">Asking Price</label>
+                    </div>
+                    <div class="inp-wrap">
+                        <input type="text" name="price" id="price" placeholder="$" required>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <h3>Contact Information</h3>
+        <hr>
+        <p>
+            ChenZhi Ma
+        </p>
+        <p>
+            NorthPoint Dr, Stevens Point, WI, USA
+        </p>
+        <p>
+            TEL: 312-874-3930
+        </p>
+    </footer>
+</body>
+
+</html>

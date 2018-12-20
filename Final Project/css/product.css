@@ -1,0 +1,109 @@
+main .product-detail {
+    width: 900px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .product-detail .gallery {
+    width: 360px;
+}
+
+main .product-detail .gallery .image-wrap {
+    width: 100%;
+    border-radius: 0 2em;
+    box-shadow: 0 0 1em #005174;
+    overflow: hidden;
+    margin: 1em 0;
+}
+
+main .product-detail .gallery .image-wrap img {
+    width: 100%;
+    display: block;
+}
+
+main .product-detail .descr {
+    width: 480px;
+    font-size: 1.2em;
+}
+
+main .product-detail .descr select {
+    font-size: inherit;
+    color: inherit;
+}
+
+main .product-detail .descr p {
+    text-align: justify;
+}
+
+main .product-detail .order {
+    margin-top: 2em;
+}
+
+main .product-detail .order a.order-btn {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    border-radius: 1em;
+    border: .1em solid #005174;
+    font-weight: bold;
+    width: 7em;
+    margin: 0 auto;
+    text-align: center;
+    padding: .2em;
+}
+
+main .product-detail .order a.order-btn:hover {
+    box-shadow: 0 0 1em #005174;
+}
+
+main .product-detail .order a.order-btn img {
+    display: inline-block;
+    height: 1.5em;
+    vertical-align: middle;
+}
+
+main .product-detail .order a.order-btn span {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+main .you-may-check {
+    width: 1000px;
+    margin: 2em auto 0 auto;
+    font-size: 1.2em;
+}
+
+main .you-may-check h2 {
+    text-align: center;
+}
+
+main .you-may-check .gallery {
+    display: flex;
+    justify-content: space-around;
+}
+
+main .you-may-check .gallery .image-wrap {
+    width: 300px;
+    border-radius: 0 1em;
+    box-shadow: inset 0 0 .2em #005174;
+    margin: .35em;
+    transition: all 250ms linear;
+}
+
+main .you-may-check .gallery .image-wrap:hover {
+    cursor: pointer;
+    box-shadow: inset 0 0 .5em #005174;
+    border-radius: 0 2em;
+    transition: all 250ms linear;
+}
+
+main .you-may-check .gallery .image-wrap img {
+    width: 100%;
+    display: block;
+}
+
+main .you-may-check .gallery .image-wrap:hover img {
+    transform: rotateY(360deg);
+    transition: all 250ms linear;
+}

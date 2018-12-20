@@ -1,0 +1,86 @@
+main .just-in {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+main .just-in .label {
+    font-size: 28px;
+    font-weight: bold;
+    font-style: italic;
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+main .just-in .products {
+    margin: 1em 0;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+main .just-in .products .product {
+    border-radius: 0 1em;
+    box-shadow: inset 0 0 .2em #005174;
+    padding: 1em;
+    margin: .35em;
+    transition: all 250ms linear;
+}
+
+main .just-in .products .product:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: inset 0 0 .5em #005174;
+    border-radius: 0 2em;
+    transition: all 250ms linear;
+}
+
+main .just-in .products .product img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+
+main .just-in .products .product:hover img {
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+    transform: scale(1.1);
+}
+
+main .just-in .products .product figcaption {
+    font-size: 14px;
+    text-align: center;
+    width: 150px;
+    margin-top: .5em;
+}
+
+main .sell {
+    font-size: 22px;
+    font-weight: bold;
+    width: 120px;
+    height: 120px;
+    line-height: 115px;
+    text-align: center;
+    border-radius: 50%;
+    border: .2em solid #005174;
+    margin: 1em auto 0 auto;
+}
+
+main .sell:hover {
+    cursor: pointer;
+}
+
+main .sell span {
+    font-size: 1.2em;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    transition: all .5s linear;
+}
+
+main .sell:hover span {
+    transform: rotateX(360deg);
+    transition: all .5s linear;
+}

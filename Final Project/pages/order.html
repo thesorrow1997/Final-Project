@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sneaker Home</title>
+    <link rel="stylesheet" href="../css/public.css">
+    <link rel="stylesheet" href="../css/order.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="../index.html">
+                Sneaker Home
+            </a>
+        </h1>
+        <nav>
+            <div class="nav-item">
+                <a href="#">NIKE</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">JORDAN</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">ADIDAS</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">FOOTWEAR</a>
+            </div>
+            <div class="nav-item">
+                <a href="#">JOURNAL</a>
+            </div>
+        </nav>
+        <div class="user-panel">
+            <img src="../images/search-icon-nav.png" alt="search icon">
+            <img src="../images/add-icon-nav.png" alt="add icon" onclick="location.href='pages/dashboard.html';">
+            <img src="../images/cart-icon-nav.png" alt="cart icon">
+        </div>
+    </header>
+    <main>
+        <section class="order">
+            <h2>Order Form</h2>
+            <div>
+                <form action="thanks.html" method="GET" id="order-form" onsubmit="return validateForm();">
+                    <div class="inp-grp">
+                        <div class="hint" id="hint-first-name"></div>
+                        <label for="first-name">First Name:</label>
+                        <input type="text" name="first-name" id="first-name">
+                    </div>
+                    <div class="inp-grp">
+                        <div class="hint" id="hint-last-name"></div>
+                        <label for="last-name">Last Name:</label>
+                        <input type="text" name="last-name" id="last-name">
+                    </div>
+                    <div class="inp-grp">
+                        <div class="hint" id="hint-address-1"></div>
+                        <label for="address #1">Address #1:</label>
+                        <input type="text" name="address-1" id="address-1">
+                    </div>
+                    <div class="inp-grp">
+                        <div class="hint" id="hint-address-2"></div>
+                        <label for="address #2">Address #2:</label>
+                        <input type="text" name="address-2" id="address-2">
+                    </div>
+                    <div class="inp-grp">
+                        <div class="hint" id="hint-email"></div>
+                        <label for="email">Email:</label>
+                        <input type="text" name="email" id="email">
+                    </div>
+                    <div class="inp-grp">
+                        <div class="hint" id="hint-tel"></div>
+                        <label for="tel">Tel:</label>
+                        <input type="text" name="tel" id="tel">
+                    </div>
+                    <div class="inp-grp">
+                        <div class="hint" id="hint-card-no"></div>
+                        <label for="card-no">Card No.:</label>
+                        <input type="text" name="card-no" id="card-no">
+                    </div>
+                    <button>Submit</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Contact Information</h3>
+        <hr>
+        <p>
+            ChenZhi Ma
+        </p>
+        <p>
+            NorthPoint Dr, Stevens Point, WI, USA
+        </p>
+        <p>
+            TEL: 312-874-3930
+        </p>
+    </footer>
+    <script src="../cgi-bin/order.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+main .form {
+    width: 400px;
+    margin: 0 auto;
+}
+
+main .form .inp-grp {
+    margin: 1em 0;
+}
+
+main .form .inp-grp label {
+    font-weight: bold;
+}
+
+main .form .inp-grp input,
+main .form .inp-grp select {
+    font-size: inherit;
+    color: inherit;
+    padding: .1em .5em;
+}
+
+main .form .inp-grp.search-bar {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+main .form .inp-grp.search-bar label {
+    display: block;
+    margin-bottom: .5em;
+}
+
+main .form .inp-grp.search-bar .inp-wrap {
+    position: relative;
+}
+
+main .form .inp-grp.search-bar .inp-wrap input[type="search"] {
+    margin-bottom: 10em;
+    width: 100%;
+    padding-left: 1.75em;
+    border-radius: 1.5em;
+}
+
+main .form .inp-grp.search-bar .inp-wrap input[type="submit"] {
+    position: absolute;
+    display: block;
+    top: 5px;
+    left: 7px;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    background-image: url("../images/search-icon.png");
+    background-size: 100% 100%;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+main .form .inp-grp:not(.search-bar) {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .form .inp-grp:not(.search-bar) .lbl-wrap {
+    width: 200px;
+}
+
+main .form .inp-grp:not(.search-bar) .inp-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+}
+
+main .form .inp-grp:not(.search-bar) .inp-wrap input[type="text"],
+main .form .inp-grp:not(.search-bar) .inp-wrap select {
+    width: 100%;
+}
+
